@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navani – Cuidado Perfecto</title>
+    <meta
+      name="description"
+      content="Navani – Cuidado Perfecto. Venta de productos de belleza y cuidado personal: Natura, Kativa, Yanbal, Ésika y más."
+    />
+    <meta
+      name="keywords"
+      content="Navani, cuidado perfecto, belleza, cuidado personal, Natura, Kativa, Yanbal, Esika"
+    />
+    <link rel="icon" href="img/icono.PNG" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header / Nav -->
+    <header>
+      <div class="container nav" role="navigation" aria-label="Principal">
+        <a href="#inicio" class="brand" aria-label="Ir al inicio">
+          <img src="img/icono.PNG" alt="Logotipo Navani" />
+          <h2><span class="name">Navani</span></h2>
+        </a>
+        <nav id="site-nav">
+          <button
+            class="hamb"
+            id="hamb"
+            aria-expanded="false"
+            aria-controls="menu"
+            aria-label="Abrir menú"
+          >
+            ☰
+          </button>
+          <ul id="menu" role="menubar" aria-label="Enlaces">
+            <li role="none">
+              <a role="menuitem" href="#inicio" class="active">Inicio</a>
+            </li>
+            <li role="none">
+              <a role="menuitem" href="#productos">Productos</a>
+            </li>
+            <li role="none"><a role="menuitem" href="#marcas">Marcas</a></li>
+            <li role="none">
+              <a role="menuitem" href="#ubicanos">Ubicanos</a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <main id="inicio" class="hero" aria-label="Portada">
+      <div class="container hero-inner">
+        <div>
+          <span class="badge">Cuidado Perfecto</span>
+          <h1>Navani – belleza y cuidado personal de marcas confiables</h1>
+          <p>
+            Ofrecemos productos de <strong>belleza</strong> y
+            <strong>cuidado personal</strong> de marcas como Natura, Kativa,
+            Yanbal y Ésika. Calidad y confianza para resaltar tu mejor versión.
+          </p>
+          <div class="hero-cta">
+            <a
+              class="btn btn-primary"
+              href="#productos"
+              aria-label="Ver productos"
+              >Ver productos</a
+            >
+            <a class="btn btn-outline" href="#ubicanos" aria-label="Ubicanos"
+              >Ubicanos</a
+            >
+          </div>
+        </div>
+        <div class="hero-img" aria-hidden="true">
+          <!-- Mock de producto/brand: puedes reemplazar por una foto real -->
+          <div class="carrusel">
+            <img src="img/Carrusel/imagen 1.jpg" class="active" />
+            <img src="img/Carrusel/imagen 2.jpg" />
+            <img src="img/Carrusel/imagen 3.jpg" />
+            <img src="img/Carrusel/imagen 4.jpg" />
+            <img src="img/Carrusel/imagen 5.jpg" />
+            <img src="img/Carrusel/imagen 6.jpg" />
+            <img src="img/Carrusel/imagen 7.jpg" />
+            <img src="img/Carrusel/imagen 8.jpg" />
+            <img src="img/Carrusel/imagen 9.jpg" />
+            <img src="img/Carrusel/imagen 10.jpg" />
+            <img src="img/Carrusel/imagen 11.jpg" />
+            <img src="img/Carrusel/imagen 12.jpg" />
+            <img src="img/Carrusel/imagen 13.jpg" />
+            <img src="img/Carrusel/imagen 14.jpg" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Sobre nosotros -->
+    <section aria-labelledby="about-title">
+      <div class="container about">
+        <div class="about-card">
+          <div class="section-head">
+            <div class="section-kicker">Sobre nosotros</div>
+            <h2 id="about-title">Compromiso con tu cuidado diario</h2>
+          </div>
+          <p>
+            En <strong>Navani</strong> creemos que el cuidado personal debe ser
+            sencillo, seguro y placentero. Por eso seleccionamos
+            <em>marcas reconocidas</em> con estándares de calidad, para que
+            elijas con confianza. Te asesoramos según tus objetivos: nutrición
+            capilar, skincare, fragancias o bienestar.
+          </p>
+          <ul>
+            <li>Productos originales y vigentes.</li>
+            <li>Recomendaciones honestas, orientadas a resultados.</li>
+            <li>Opciones para distintos tipos de piel y cabello.</li>
+          </ul>
+        </div>
+        <div>
+          <img
+            src="img/tienda.jpg"
+            alt="Productos de belleza y cuidado personal organizados sobre una mesa"
+            style="border-radius: var(--radius); box-shadow: var(--shadow)"
+          />
+        </div>
+      </div>
+    </section>
+
+
+<!-- MAPEADO DE PRODUCTOS ESTRELLA -->
+
+    <!-- Productos destacados -->
+    <section id="productos" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Productos</div>
+          <h2 id="products-title">Destacados</h2>
+          <p class="hint">
+            Descubre los productos más reconocidos y preferidos de nuestras marcas aliadas.
+          </p>
+        </div>
+
+        <div class="filters" role="tablist" aria-label="Filtros de categoría">
+          <button
+            class="active"
+            data-filter="all"
+            role="tab"
+            aria-selected="true"
+          >
+            Todos
+          </button>
+          <button data-filter="cabello" role="tab">Cabello</button>
+          <button data-filter="rostro" role="tab">Rostro</button>
+          <button data-filter="fragancias" role="tab">Fragancias</button>
+          <button data-filter="corporal" role="tab">Corporal</button>
+        </div>
+
+            <div class="grid" id="product-grid">
+              <!-- Tarjeta producto -->
+          <article
+                class="card"
+                data-category="cabello"
+                aria-label="Kativa Cuidado Capilar"
+              >
+            <div class="card-media" aria-hidden="true">
+            <img src="img/Productos/kativa_cuidado_capilar.jpg" alt="Kativa Cuidado Capilar" />
+            </div>
+            <div class="card-body">
+              <h3>Kativa Cuidado Capilar</h3>
+              <div class="meta">Cabello | 350/550/1000 mL</div>
+              <div class="price">Libre de sal, sulfatos y gluten</div>
+            </div>
+            <div class="actions">
+              <a
+                class="btn btn-primary"
+                href="https://wa.me/51936284817?text=Hola%20Navani,%20estoy%20interesado(a)%20por%20su%20línea%20Kativa%20Cuidado%20Capilar."
+                aria-label="Consultar por Kativa Cuidado Capilar"
+                >Consultar</a
+              >
+              <a
+                class="btn btn-outline"
+                href="https://www.kativa.com/es/productos"
+                aria-label="Ver más del producto"
+                >Ver</a
+              >
+            </div>
+          </article>
+          <!-- Listo  -->
+          <article
+            class="card"
+            data-category="rostro"
+            aria-label="Hinode Routine Dermo"
+          >
+            <div class="card-media" aria-hidden="true">
+            <img src="img/Productos/Hinode_Routine_Dermo.png" alt="Hinode Routine Dermo" />
+            </div>
+            <div class="card-body">
+              <h3>Hinode Routine Dermo</h3>
+              <div class="meta">Rostro | Rutina completa</div>
+              <div class="price">Tratado / Probado dermatologicamente</div>
+            </div>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://wa.me/51936284817?text=Hola%20Navani,%20estoy%20interesado(a)%20por%20su%20línea%20Hinode%20Routine%20Dermo.">Consultar</a>
+              <a class="btn btn-outline" href="https://grupohinode.com/cl/marca/routine">Ver</a>
+            </div>
+          </article>
+
+          <article
+            class="card"
+            data-category="fragancias"
+            aria-label="Esika Magnat"
+          >
+            <div class="card-media" aria-hidden="true">
+            <img src="img/Productos/Esika_Magnat.webp" alt="Esika Magnat" />
+            </div>
+            <div class="card-body">
+              <h3>Esika Magnat</h3>
+                <div class="meta">Fragancia | 90 mL</div>
+                <div class="price">Elegancia y fragancia de alto impacto</div>
+            </div>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://wa.me/51936284817?text=Hola%20Navani,%20estoy%20interesado(a)%20por%20su%20línea%20Esika%20Magnat.">Consultar</a>
+              <a class="btn btn-outline" href="https://esika.tiendabelcorp.com.pe/magnat-perfume-de-hombre-90-ml/p">Ver</a>
+            </div>
+          </article>
+
+          <article
+            class="card"
+            data-category="corporal"
+            aria-label="Yanbal Biomilk"
+          >
+            <div class="card-media" aria-hidden="true">
+            <img src="img/Productos/Yanbal_Biomilk.webp" alt="Yanbal Biomilk" />
+            </div>
+            <div class="card-body">
+              <h3>Yanbal Biomilk</h3>
+              <div class="meta">Corporal | 750 mL</div>
+              <div class="price">Nutrición con ciencia probiótica</div>
+            </div>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://wa.me/51936284817?text=Hola%20Navani,%20estoy%20interesado(a)%20por%20su%20línea%20Yanbal%20Biomilk.">Consultar</a>
+              <a class="btn btn-outline" href="https://www.yanbal.com/pe/corporate/lineas/c/bio-milk/">Ver</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="cabello">
+            <div class="card-media" aria-hidden="true">
+            <img src="img/Productos/kativa_alisado_brasileño.jpg" alt="Kativa Cuidado Capilar" />
+            </div>
+            <div class="card-body">
+              <h3>Kativa Alisado Brasileño</h3>
+              <div class="meta">Cabello | 355 mL</div>
+              <div class="price">Libre de sal, sulfatos y gluten</div>
+            </div>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://wa.me/51936284817?text=Hola%20Navani,%20estoy%20interesado(a)%20por%20su%20línea%20Kativa%20Alisado%20Brasileño.">Consultar</a>
+              <a class="btn btn-outline" href="https://www.kativa.com/es/productos">Ver</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="rostro">
+            <div class="card-media" aria-hidden="true">
+            <img src="img/Productos/Yanbal_Sentiva.webp" alt="Yanbal Sentiva" />
+            </div>
+            <div class="card-body">
+              <h3>Yanbal Sentiva</h3>
+              <div class="meta">Rostro | 30 mL</div>
+              <div class="price">Luminosidad y firmeza facial</div>
+            </div>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://wa.me/51936284817?text=Hola%20Navani,%20estoy%20interesado(a)%20por%20su%20línea%20Yanbal%20Sentiva.">Consultar</a>
+              <a class="btn btn-outline" href="https://www.yanbal.com/pe/corporate/sueros-sentiva#suero-antioxidante">Ver</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="fragancias">
+            <div class="card-media" aria-hidden="true">
+            <img src="img/Productos/Natura_Kaiak.webp" alt="Yanbal Sentiva" />
+            </div>
+            <div class="card-body">
+              <h3>Natura Kaiak</h3>
+              <div class="meta">Fragancia | 100 mL</div>
+              <div class="price">Movimiento, naturaleza y vitalidad</div>
+            </div>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://wa.me/51936284817?text=Hola%20Navani,%20estoy%20interesado(a)%20por%20su%20línea%20Natura%20Kaiak.">Consultar</a>
+              <a class="btn btn-outline" href="https://www.natura.com.pe/c/kaiak?srsltid=AfmBOopQoEGNv6tWsCeMIXCo5bL05J6ijAcWwA2A8wcvKdm2ip49PPDS">Ver</a>
+            </div>
+          </article>
+          
+          <article class="card" data-category="corporal">
+            <div class="card-media" aria-hidden="true">
+            <img src="img/Productos/Hinode_Joli.png" alt="Hinode Joli" />
+            </div>
+            <div class="card-body">
+              <h3>Hinode Joli</h3>
+              <div class="meta">Corporal | 200 mL</div> 
+              <div class="price">Frescura femenina que enamora</div>
+            </div>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://wa.me/51936284817?text=Hola%20Navani,%20estoy%20interesado(a)%20por%20su%20línea%20Hinode%20Joli.">Consultar</a>
+              <a class="btn btn-outline" href="https://hinodelima.com/marca-joli/?srsltid=AfmBOorQiekINB3bqAsDX1ZK_XHCFNKkWGSkI9XAdC2cVtvu866ICMkF">Ver</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marcas -->
+    <section
+      id="marcas"
+      aria-labelledby="brands-title"
+      style="background: var(--color-mute)"
+    >
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Marcas</div>
+          <h2 id="brands-title">Trabajamos con</h2>
+        </div>
+        <div class="brands" role="list">
+          <span class="brand-pill" role="listitem">Natura</span>
+          <span class="brand-pill" role="listitem">Kativa</span>
+          <span class="brand-pill" role="listitem">Yanbal</span>
+          <span class="brand-pill" role="listitem">Ésika</span>
+          <span class="brand-pill" role="listitem">Hinode</span>
+          <span class="brand-pill" role="listitem">y más…</span>
+
+          <section class="marcas-slider">
+            <div class="marcas-track">
+              <div class="marcas"><img src="img/kativa.png" /></div>
+              <div class="marcas"><img src="img/esika.jpg" /></div>
+              <div class="marcas"><img src="img/hinode.jpeg" /></div>
+              <div class="marcas"><img src="img/yanbal.jpg" /></div>
+              <div class="marcas"><img src="img/natura.jpg" /></div>
+              <div class="marcas"><img src="img/cyzone.jpg" /></div>
+              <div class="marcas"><img src="img/lbel.jpg" /></div>
+              <!-- Se duplico para que el loop se vea continuo -->
+              <div class="marcas"><img src="img/kativa.png" /></div>
+              <div class="marcas"><img src="img/esika.jpg" /></div>
+              <div class="marcas"><img src="img/hinode.jpeg" /></div>
+              <div class="marcas"><img src="img/yanbal.jpg" /></div>
+              <div class="marcas"><img src="img/natura.jpg" /></div>
+              <div class="marcas"><img src="img/cyzone.jpg"/></div>
+              <div class="marcas"><img src="img/lbel.jpg" /></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+<!-- SECCIÓN MAPA – UBICACIÓN -->
+    <section id="ubicanos" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Ubicanos</div>
+          <h2 id="contact-title">¿Sabias que ahora estamos más cerca de ti?</h2>
+          <p class="hint">
+            Estamos ubicados en un lugar estratégico para ti. ¡Ven y visítanos!
+          </p>
+        </div>
+
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 30px;
+          align-items: center;
+          max-width: 1100px;
+          margin: auto;
+        "
+      >
+        <!-- Bloque de información -->
+        <div
+          style="
+            flex: 1;
+            min-width: 300px;
+            text-align: left;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          "
+        >
+          <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: #222">
+            📍 Nuestra dirección
+          </h3>
+          <p style="margin-bottom: 10px; color: #444">
+            Av. Belaunde No.157, Chiclayo, Lambayeque - Perú
+          </p>
+          <p style="margin-bottom: 5px; color: #444">
+            Referencia: Frente a Condominio Los Parques de San Gabriel
+          </p>
+          <h3 style="font-size: 1.5rem; margin: 20px 0 10px; color: #222">
+            📞 Contáctanos
+          </h3>
+          <p style="margin-bottom: 10px; color: #444">+51 936 284 817</p>
+          <p style="margin-bottom: 20px; color: #444">navanicix.belleza@gmail.com</p>
+          <a
+            href="https://maps.app.goo.gl/1r7DUJean2HiVxqR9"
+            target="_blank"
+            style="
+              display: inline-block;
+              background: #651815;
+              color: white;
+              padding: 12px 25px;
+              border-radius: 30px;
+              font-size: 1rem;
+              text-decoration: none;
+              font-weight: bold;
+              transition: 0.3s;
+            "
+          >
+            Ver en Google Maps
+          </a>
+        </div>
+
+        <!-- Mapa -->
+        <div
+          style="
+            flex: 2;
+            min-width: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          "
+        >
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.62375236878518!2d-79.87326979627788!3d-6.772283500727261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cef7475bb9bbf%3A0x511ed330ce65c31f!2sNavani%20%E2%80%93%20Productos%20de%20Belleza%2C%20Perfumer%C3%ADa%20y%20Cuidado%20Personal!5e0!3m2!1ses-419!2spe!4v1758152278530!5m2!1ses-419!2spe" 
+          width="600" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+<section class="info-final">
+  <div class="info-container">
+    <h2>¿Por qué elegirnos?</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Ubicación</h3>
+        <p>Estamos en Chiclayo.</p>
+      </div>
+      <div class="info-card">
+        <i class="fas fa-truck"></i>
+        <h3>Delivery Local</h3>
+        <p>Gratis en puntos de entrega y delivery a todo Chiclayo y alrededores.</p>
+      </div>
+      <div class="info-card">
+        <i class="fas fa-box"></i>
+        <h3>Envíos Nacionales</h3>
+        <p>Enviamos a otros departamentos con el courier de tu preferencia.</p>
+      </div>
+      <div class="info-card">
+        <i class="fas fa-headset"></i>
+        <h3>Atención Personalizada</h3>
+        <p>Resolvemos consultas y pedidos las 24 horas, de lunes a domingo.</p>
+      </div>
+      <div class="info-card">
+        <i class="fas fa-clock"></i>
+        <h3>Horario de Tienda</h3>
+        <p>Lunes a sábado, 10am a 10pm.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer aria-label="Pie de página">
+      <div class="container footer-grid">
+        <div>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 0.75rem;
+              margin-bottom: 0.5rem;
+            "
+          >
+            <img
+              src="img/icono.PNG"
+              alt="Logotipo Navani"
+              width="36"
+              height="36"
+            />
+            <strong>Navani - Cuidado Perfecto</strong>
+          </div>
+          <p class="footer-note">
+            Productos de belleza y cuidado personal seleccionados para ti.
+          </p>
+          <div class="socials" aria-label="Redes sociales">
+            <a
+              href="https://wa.me/51936284817"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
+            >
+              <!-- ícono WhatsApp -->
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20.52 3.48A11.77 11.77 0 0 0 12.01.25 11.76 11.76 0 0 0 .25 12.02c0 2.06.54 4.05 1.56 5.81L.26 23.75l6.06-1.52a11.76 11.76 0 0 0 5.69 1.45h.01A11.76 11.76 0 0 0 23.77 12c0-3.14-1.22-6.08-3.25-8.11Z"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M17.11 14.02c-.26-.13-1.52-.75-1.76-.84-.24-.09-.42-.13-.6.13-.18.26-.69.84-.84 1.02-.15.18-.31.2-.57.07-.26-.13-1.1-.4-2.09-1.27-.77-.68-1.3-1.52-1.45-1.78-.15-.26-.02-.4.11-.53.12-.12.26-.31.4-.47.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.47-.07-.13-.6-1.46-.82-2-.22-.53-.44-.46-.6-.46h-.51c-.18 0-.47.07-.72.34-.25.26-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.15.18 1.9 2.9 4.6 4.06.64.28 1.15.45 1.54.57.65.21 1.24.18 1.7.11.52-.08 1.52-.62 1.74-1.23.22-.6.22-1.11.15-1.23-.07-.12-.24-.18-.5-.31Z"
+                  fill="#fff"
+                />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/navani.cix/" aria-label="Instagram">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <rect
+                  x="3"
+                  y="3"
+                  width="18"
+                  height="18"
+                  rx="5"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                />
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="4"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                />
+                <circle cx="17.5" cy="6.5" r="1" fill="#fff" />
+              </svg>
+            </a>
+            <a href="https://web.facebook.com/Navanicix/" aria-label="Facebook">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M14 9h3V5h-3a5 5 0 0 0-5 5v3H6v4h3v7h4v-7h3l1-4h-4v-2a2 2 0 0 1 2-2Z"
+                  fill="#fff"
+                />
+              </svg>
+            </a>
+          </div>
+          <p class="footer-note">
+            Atencion personalizada y pedidos: Lunes - Domingo (24 horas)
+          </p>
+        </div>
+        <div>
+          <h3>Enlaces</h3>
+          <nav aria-label="Enlaces de pie">
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: grid;
+                gap: 0.35rem;
+              "
+            >
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#productos">Productos</a></li>
+              <li><a href="#marcas">Marcas</a></li>
+              <li><a href="#ubicanos">Ubicanos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="container subfooter">
+        <span
+          >© <span id="year"></span> Navani. Todos los derechos
+          reservados.</span
+        >
+      </div>
+    </footer>
+
+<!-- ===== Botones Flotantes Redes Sociales (Izquierda) ===== -->
+<div class="social-floating">
+  <a href="https://web.facebook.com/Navanicix/" target="_blank" class="btn-floating fb">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" />
+  </a>
+
+  <a href="https://www.instagram.com/navani.cix/" target="_blank" class="btn-floating ig">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
+  </a>
+
+  <a href="https://wa.me/51936284817?text=Hola%20Navani,%20quiero%20más%20información" 
+     target="_blank" class="btn-floating wa">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" />
+  </a>
+</div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
